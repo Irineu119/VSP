@@ -12,6 +12,7 @@ public class Perfil {
     @Column(nullable = false, unique = true)
     private String nome_perfil;
 
+    @JoinColumn(nullable = false)
     @ManyToOne
     private Usuario usuario;
 
